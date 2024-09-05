@@ -1,9 +1,9 @@
-package service;
+package lab1SpringJPA.service;
 
-import model.Chapter;
+import lab1SpringJPA.model.Chapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ChapterRepository;
+import lab1SpringJPA.repository.ChapterRepository;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,10 +1,10 @@
-package service;
+package lab1SpringJPA.service;
 
-import enums.Status;
-import model.Member;
+import lab1SpringJPA.enums.MemberStatus;
+import lab1SpringJPA.model.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.MemberRepository;
+import lab1SpringJPA.repository.MemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,7 +18,7 @@ public class MemberService {
 
     public Optional<Member> getMemberById(Long id){ return memberRepository.findById(id); }
 
-    public List<Member> buscarPorStatusMiembro(Status statusMiembro) {
+    public List<Member> buscarPorStatusMiembro(MemberStatus statusMiembro) {
         return memberRepository.findByStatus(statusMiembro);
     }
 }

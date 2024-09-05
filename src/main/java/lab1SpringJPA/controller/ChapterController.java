@@ -1,10 +1,10 @@
-package controller;
+package lab1SpringJPA.controller;
 
-import model.Chapter;
+import lab1SpringJPA.model.Chapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.ChapterService;
+import lab1SpringJPA.service.ChapterService;
 
 import java.util.List;
 import java.util.Optional;

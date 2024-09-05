@@ -1,4 +1,4 @@
-package model;
+package lab1SpringJPA.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -17,6 +17,8 @@ public class Chapter implements Serializable {
     private String district;
     @OneToOne
     private Member president;
-    @OneToMany
+
+    //mapped es el nombre que le doy para que busque la lista de miembros
+    @OneToMany(mappedBy = "chapter")
     private List<Member> members;
 }
